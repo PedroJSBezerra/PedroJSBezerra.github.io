@@ -1,0 +1,74 @@
+*{
+    font-family: Arial;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  /*HEADER STYLE*/
+  .header{
+    padding: 10px;
+    text-align: center;
+    background: #957;
+    color: white;
+  }
+  .header p{
+    font-size: 13px;
+  }
+  
+  /*NAV STYLE*/
+  .nav{
+    background: #333;
+  }
+  .nav ul{
+    overflow: hidden;
+    list-style-type: none;
+  }
+  .nav ul li{
+    float: left;
+  }
+  .nav ul li a{
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    padding: 10px 8px;
+    color: white;
+    text-decoration: none;
+  }
+  /*estudar a:hover:not(.cadastro)*/
+  .nav ul li a:hover:not(.cadastro){
+    background: gray;
+  }
+  .cadastro {
+    background-color: gray;
+  }
+  #about{
+    float: right;
+  }
+  
+  /*FORM STYLE*/
+  form{
+    margin: 25px 10px;
+  }
+  fieldset{
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  legend{
+    border-radius: 5px;
+    margin: 15px;
+    background-color: #bbb;
+    padding: 3px 5px;
+  }
+  label{
+    margin-left: 5px;
+  }
+  input{
+    border-radius: 3px;
+    margin: 5px;
+  }
+  /*FOOTER STYLE*/
+  .footer p{
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+  }
