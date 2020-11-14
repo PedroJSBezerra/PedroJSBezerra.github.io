@@ -68,6 +68,10 @@
   }
   /*FOOTER STYLE*/
   .footer p{
+    position: fixed;
+    bottom: 0;
+    right: 25%;
+    left: 25%;
     margin: 10px;
     text-align: center;
     font-size: 10px;
