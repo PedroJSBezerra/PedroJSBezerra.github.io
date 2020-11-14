@@ -1,4 +1,4 @@
-var x = document.getElementById("latLong");
+var x = document.getElementById("latlong");
 function geo() {
     navigator.geolocation.getCurrentPosition(showPosition);
 }
