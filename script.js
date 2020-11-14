@@ -1,11 +1,7 @@
-
-var res = document.getElementById("geolocation")
-var loc = navigator.geolocation.getCurrentPosition(showPosition)
-
-function geo(){
-
+var x = document.getElementById("latLong");
+function geo() {
+    navigator.geolocation.getCurrentPosition(showPosition);
 }
-
-function showPosition(){
-    res.innerHTML = loc
+function showPosition(position) {
+  x.value = position.coords.latitude +","+position.coords.longitude;
 }
