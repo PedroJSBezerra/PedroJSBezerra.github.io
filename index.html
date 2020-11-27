@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.2/iconfont/material-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-          <h1>PedroJSBezerra</h1>
-          <p>sistema de cadastro com geolocalização</p>
-        </div>
-        <div class="nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li id="cadastro"><a class="cadastro" href="#cadastro">Cadastro</a></li>
-            <li><a href="#">Lista</a></li>
-            <li id="about"><a class="active" href="#about">Sobre</a></li>
-          </ul>
-        </div>
-        <div class="main">
-          <form action="#" method="post">
-            <fieldset>
-              <legend>Cadastro: </legend>
+  <div class="mobile">
+    <div class="content">
+      <div class="header">Geolocation</div>
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Cadastro</a>
+        <a href="#">Lista</a>
+        <a href="#">Contato</a>
+      </div>
+      <div class="main">
+        <p><span class="material-icons">error_outline</span><br>Sistema de cadastro <br> com geolocalização.</p>
+        <form action="#">
+          <fieldset>
+            <legend>Cadastro:</legend>
               <label for="nome">Nome: </label><br>
-              <input type="text" size="30" id="nome"><br><br>
-              
-              
+              <input type="text" size="25" id="nome"><br><br>
+
+
               <label for="telefone">Telefone: </label><br>
               <input type="text" size="15" id="telefone"><br><br>
-              
+
               <label for="endereco">Endereço: </label><br>
-              <input type="text" size="40" id="endereco"><br><br>
-              
-              <input type="button" onclick="geo()" value="Geolocalização"><br>
-              <input type="text" size="30" id="latlong"><br><br>
-              
-              <input type="button" onclick="save()" value="Salvar">
-            </fieldset>
-          </form>
-        </div>
-        <div class="footer"><p>Designed with &#9829; by PedroJSBezerraDev</p></div>
+              <input type="text" size="25" id="endereco"><br><br>
+
+              <input type="button" class="geo" id="geo" value="Geolocalização"><br>
+              <input type="text" size="25" id="res"><br>
+
+              <input type="button" class="save" id="save" value="Salvar">
+            
+            <!--<span class="material-icons">spellcheck</span>
+            <span class="material-icons">call</span>
+            <span class="material-icons">house</span>
+            <span class="material-icons">add_location_alt</span>-->
+            
+          </fieldset>
+        </form>
       </div>
-      <script src="script.js" type="text/javascript" charset="utf-8"></script>
+        <div class="footer"><p>Designed with &#9829; by PedroJSBezerraDev</p></div>
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>

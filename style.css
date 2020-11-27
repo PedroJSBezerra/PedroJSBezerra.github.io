@@ -1,78 +1,117 @@
-*{
-    font-family: Arial;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-  }
-  /*HEADER STYLE*/
-  .header{
-    padding: 10px;
-    text-align: center;
-    background: #957;
-    color: white;
-  }
-  .header p{
-    font-size: 13px;
-  }
+/* General Style*/
+body{
+  font-family: Arial;
+  font-size: 18px;
   
-  /*NAV STYLE*/
-  .nav{
-    background: #333;
-  }
-  .nav ul{
-    overflow: hidden;
-    list-style-type: none;
-  }
-  .nav ul li{
-    float: left;
-  }
-  .nav ul li a{
-    border-radius: 3px;
-    text-align: center;
-    display: block;
-    padding: 10px 8px;
-    color: white;
-    text-decoration: none;
-  }
-  /*estudar a:hover:not(.cadastro)*/
-  .nav ul li a:hover:not(.cadastro){
-    background: gray;
-  }
-  .cadastro {
-    background-color: gray;
-  }
-  #about{
-    float: right;
-  }
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+/* Flex and center the phone :)*/
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  /*FORM STYLE*/
-  form{
-    margin: 25px 10px;
-  }
-  fieldset{
-    border-radius: 5px;
-    background-color: #eee;
-  }
-  legend{
-    border-radius: 5px;
-    margin: 15px;
-    background-color: #bbb;
-    padding: 3px 5px;
-  }
-  label{
-    margin-left: 5px;
-  }
-  input{
-    border-radius: 3px;
-    margin: 5px;
-  }
-  /*FOOTER STYLE*/
-  .footer p{
-    position: fixed;
-    bottom: 0;
-    right: 25%;
-    left: 25%;
-    margin: 10px;
-    text-align: center;
-    font-size: 10px;
-  }
+  margin-top: 30px;
+}
+/* The phone */
+.mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 300px;
+  height: 600px;
+  background: #333;
+  
+  box-shadow: 30px 50px 100px #85888c;
+  border-radius: 40px;
+}
+.content{  
+  width: 94%;
+  height: 91%;
+  background: #f5f6fA;
+    
+  border-radius:20px;
+  overflow: hidden;
+}
+/* Mobile Display */
+.header{
+  padding: 10px;
+  
+  text-shadow: 1px 1px 8px black;
+  font-size: 40px;
+  text-align: center;
+  
+  box-shadow: 1px 1px 8px black;
+  background: #66BB6A;
+  color: white;
+}
+/* Nav Styles*/
+.nav{
+  display: flex;
+}
+.nav a{
+  flex: 1;
+  padding: 15px 0;
+  
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: #444;
+}
+.nav a:hover{
+  text-decoration: none;
+  color: black;
+  background: #777;
+}
+/* Main content*/
+.main{
+  height: 400px;
+  overflow-y: scroll;
+}
+.main p{
+  text-align: center;
+}
+/* Scroll Styles*/
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+.main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.main::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+/*FORM STYLE*/
+form{
+  margin: 25px 5px;
+}
+fieldset{
+  border-radius: 5px;
+  background-color: #eee;
+}
+legend{
+  border-radius: 5px;
+  margin: 15px;
+  background-color: #bbb;
+  padding: 3px 5px;
+}
+label{
+  margin-left: 5px;
+}
+input{
+  border-radius: 3px;
+  margin: 5px;
+}
+/*FOOTER STYLE*/
+.footer p{
+  text-shadow: 1px 1px 4px #555;
+  
+  margin: 10px;
+  text-align: center;
+  font-size: 10px;
+}

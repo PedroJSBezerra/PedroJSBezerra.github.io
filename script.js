@@ -1,7 +1,5 @@
-var x = document.getElementById("latlong");
-function geo() {
-    navigator.geolocation.getCurrentPosition(showPosition);
-};
-function showPosition(position) {
-  x.value = position.coords.latitude +","+position.coords.longitude;
-};
+$(".geo").click(function(){
+  navigator.geolocation.getCurrentPosition(function(position){
+    $("#res").val(position.coords.latitude +","+position.coords.longitude)
+  })
+})
