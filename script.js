@@ -3,3 +3,6 @@ $(".geo").click(function(){
     $("#res").val(position.coords.latitude +","+position.coords.longitude)
   })
 })
+$(".save").click(function(){
+  alert("Woops! Seus dados foram salvos...")
+})
